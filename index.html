@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>3DRefTransformer: Fine-Grained Object Identification in Real-World Scenes Using Natural Language</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="In this paper, we study fine-grained 3D object identification in real-world scenes described by a textual query. The task aims to discriminatively understand an instance of a particular 3D object described by natural language utterances among other instances of 3D objects of the same class appearing in a visual scene. We introduce the \rt{} net, a transformer-based neural network that identifies 3D objects described by linguistic utterances in real-world scenes. The network's input is 3D object segmented point cloud images representing a real-world scene and a language utterance that refers to one of the scene objects. The goal is to identify the referred object.  Compared to the state-of-the-art models that are mostly based on graph convolutions and LSTMs, our \rt{} net offers two key advantages. First, it is an end-to-end transformer model that operates both on language and 3D visual objects. Second, it has a natural ability to ground textual terms in the utterance to the learning representation of 3D objects in the scene. We further incorporate object pairwise spatial relation loss and contrastive learning during model training.  We show in our experiments that our model improves the performance upon the current SOTA significantly on Referit3D Nr3D and Sr3D datasets.">
+<meta name="keywords" content="point cloud; self-attention; 3D vision; deep learning;">
+
+<!-- Fonts and stuff -->
+<link href="./reftransformer/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./reftransformer/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./reftransformer/iconize.css">
+<script async="" src="./reftransformer/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>3DRefTransformer: Fine-Grained Object Identification in Real-World Scenes Using Natural Language</h1>
+
+	<div class="authors">
+	  <a href="https://scholar.google.com/citations?user=EcKJGvkAAAAJ&hl=en">Ahmed Abdelreheem</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://ujjwal9.ml">Ujjwal Upadhyay</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://scholar.google.com/citations?user=21lY5uIAAAAJ&hl=en">Ivan Skorokhodov</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="">Rawan Al Yahya</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://scholar.google.com/citations?user=9G2OQmkAAAAJ&hl=en">Jun Chen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.mohamed-elhoseiny.com/">Mohamed Elhoseiny</a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="https://www.kaust.edu.sa
+">King Abdullah University of Science and Technology</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="venue">Winter Conference on Applications of Computer Vision (<a href="https://wacv2022.thecvf.com/" target="_blank">WACV</a>) 2022</div>
+      </div>
+
+      
+      <center><img src="./reftransformer/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+A point cloud is an agile 3D representation, efficiently modeling an object's surface geometry. However, these surface-centric properties also pose challenges on designing tools to recognize and synthesize point clouds. This work presents a novel autoregressive model, reftransformer, which generates realistic point cloud samples from scratch or conditioned on given semantic contexts. Our model operates recurrently, with each point sampled according to a conditional distribution given its previously-generated points. Since point cloud object shapes are typically encoded by long-range interpoint dependencies, we augment our model with dedicated self-attention modules to capture these relations. Extensive evaluation demonstrates that reftransformer achieves satisfying performance on both unconditional and conditional point cloud generation tasks, with respect to fidelity, diversity and semantic preservation. Further, conditional reftransformer learns a smooth manifold of given image conditions where 3D shape interpolation and arithmetic calculation can be performed inside.
+	</p>
+      </div>
+	    
+<div class="section demo">
+	<h2>Public Video</h2>
+	<br>
+	<center>
+	  <iframe width="810" height="480" src="./reftransformer/video.mp4" frameborder="0" allowfullscreen></iframe>
+	</video>
+	    </center>
+	    </div>
+
+<br>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="" target="_blank" class="imageLink"><img src="./reftransformer/paper.png"></a><br>
+		  <a href="" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/Vision-CAIR/3dreftransformer" target="_blank" class="imageLink"><img src="./reftransformer/code.png"></a><br>
+		  <a href="https://github.com/Vision-CAIR/3dreftransformer" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{abdelreheem2022reftransformer,
+title={3DRefTransformer: Fine-Grained Object Identification in Real-World Scenes Using Natural Language},
+author={Abdelreheem, Ahmed and Upadhyay, Ujjwal and Skorokhodov, Ivan and Yahya, Rawan Al and Chen, Jun and Elhoseiny, Mohamed},
+booktitle={Winter Conference on Applications of Computer Vision},
+year={2022}
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
